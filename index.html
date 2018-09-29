@@ -64,14 +64,26 @@
 <!-- Header -->
 <header id="header">
   <div class="intro">
+    <video autoplay muted loop class="introvideo">
+      <source src="vid/ghbSample.mp4" type="video/mp4">
+    </video>
     <div class="overlay">
       <div class="container">
         <div class="row">
           <div class="intro-text"> <span>studovat</span>
             <h1>Brodský gympl</h1>
-            <span>
-            <p>Tady budou problikávat hlášky jako "je sranda. Je výzva. Je super. Je požitek.". Jen trošku lepší.</p>
-            <a href="#about" class="btn btn-custom btn-lg page-scroll">Dozvědět se více</a> <a href="#about" class="btn btn-custom btn-lg page-scroll" style="background-color: white; color: #C54DAA;">Příjmačky</a> </div>
+            <span id="textShuffle">
+              <p id="snippet">Je sranda.</p>
+              <p id="snippet">Tě posune dál.</p>
+              <p id="snippet">Ti dá budoucnost.</p>
+              <p id="snippet">Je výzva.</p>
+              <p id="snippet">Tě bude bavit.</p>
+              <p id="snippet">Je požitek.</p>
+              <p id="snippet">Si užiješ.</p>
+              <p id="snippet">Tě nakopne.</p>
+              <p id="snippet">Je prostě super!</p>
+            </span>
+            <a href="#about" class="btn btn-custom btn-lg page-scroll">Dozvědět se více</a> <a href="#about" class="btn btn-custom-sec btn-lg page-scroll">Příjmačky</a> </div>
         </div>
       </div>
     </div>
@@ -81,11 +93,11 @@
 <div id="about">
   <div class="container">
     <div class="section-title text-center center">
-      <h2>About Us</h2>
+      <h2>Náš gympl</h2>
       <hr>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-6"> <img src="img/about.png" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6"> <img src="img/logo.jpg" class="img-responsive circle" alt=""> </div>
       <div class="col-xs-12 col-md-6">
         <div class="about-text">
           <h3>Lorem ipsum dolor sit amet!</h3>
@@ -97,8 +109,8 @@
   </div>
 </div>
 <!-- Services Section -->
-<div id="services" class="text-center">
-  <div class="container">
+<div id="services">
+  <div class="container text-center">
     <div class="col-md-10 col-md-offset-1 section-title">
       <h2>Our Services</h2>
       <hr>
@@ -377,5 +389,6 @@
 <script type="text/javascript" src="js/contact_me.js"></script>
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/textShuffle.js"></script>
 </body>
 </html>
